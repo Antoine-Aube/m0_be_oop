@@ -34,7 +34,7 @@ class Vampire
     @thirsty = true
     end 
     def is_hungry
-        thirsty = false
+        @thirsty = false
     end 
 end 
 
@@ -77,7 +77,7 @@ p dragon1
 # dragon1.eat
 # dragon1.eat
 # dragon1.eat
-4.times {dragon1.eat}
+3.times {dragon1.eat}
 p dragon1.is_hungry
 
 #Cydnee showed the .times method during study hall, I did it both manually and with that method to experiment with bot
@@ -128,4 +128,5 @@ p hobbit1.has_ring_of_power
 80.times {hobbit1.celebrate_birthday}
 p hobbit1.is_old
 
+p hobbit1.age
 #That was really fun! Used similar solutions as for the last one. Created my own has_ring_of_power method, but realized afterward that that wasn't necessary!
